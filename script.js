@@ -43,7 +43,7 @@ hold.addEventListener('click',function(){
     if(playing){
     scores[active]+=currscore;
     document.getElementById(`score--${active}`).textContent=scores[active];
-    if(scores[active]<20){
+    if(scores[active]<100){
         document.querySelector(`.player--${active}`).classList.remove('player--active');
         document.getElementById(`current--${active}`).textContent=0;
         active=active==0?1:0;
